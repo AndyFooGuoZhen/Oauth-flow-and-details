@@ -1,4 +1,7 @@
-# Resource : https://www.youtube.com/watch?v=996OiexHze0
+# Resources
+- Video link : https://www.youtube.com/watch?v=996OiexHze0
+- Oidc debugger : https://oidcdebugger.com/
+- Id token decoder : https://jwt.io/
 
 # Old ways of getting user info
 Application asks for user's credentials, use user's crentials to login to their account , get information and logout, making a "promise" not to touch their personal info. This is incredibly risky and not a good way of accessing user's info. Example , yelp wants to have access to gmail contacts, it uses my gmail and password to login and get those information from my gmail. In this case, you are trusting yelp to only access information that's needed.
@@ -59,6 +62,35 @@ After having our access code. We can then make a get request and specify a heade
 
 # Oauth implicit flow
 <img width="721" alt="image" src="https://github.com/AndyFooGuoZhen/Oauth-flow-and-details/assets/77149531/40715a8d-86cb-41e4-9312-54640503e5a4">
+
+# OpenID Connect
+Prior to 2014, facebook and other tech companies are using oauth as a method for authentication. Oauth is not a good tool for authentication as it is mainly used for authorization to resource servers. Companies have to "hack" oauth to also provide user information when being used for authentication. So OpenID connect is created to solve this issue by being an extension to the traditional Oauth.
+
+<img width="535" alt="image" src="https://github.com/AndyFooGuoZhen/Oauth-flow-and-details/assets/77149531/89500bae-cccb-41bf-919d-9229eef71674">
+
+# Use cases
+<img width="611" alt="image" src="https://github.com/AndyFooGuoZhen/Oauth-flow-and-details/assets/77149531/c616c194-6719-4aba-ae2d-576e39b56fdc">
+
+# ID token to retrieve user's info
+<img width="736" alt="image" src="https://github.com/AndyFooGuoZhen/Oauth-flow-and-details/assets/77149531/d47348e9-9ff8-4bc5-8add-fb6313ea38e1">
+
+## Retrieving user's info via backchannel
+<img width="1217" alt="image" src="https://github.com/AndyFooGuoZhen/Oauth-flow-and-details/assets/77149531/03c3e9b6-b132-4f32-8db3-cb6d1510d38e">
+
+# Grant type
+<img width="609" alt="image" src="https://github.com/AndyFooGuoZhen/Oauth-flow-and-details/assets/77149531/f0d348bc-a13e-4fee-9cbd-eb7a43c6bb80">
+
+## Front-back channel
+<img width="684" alt="image" src="https://github.com/AndyFooGuoZhen/Oauth-flow-and-details/assets/77149531/6d0a2e15-7bdf-4ce7-8957-358aa49595d2">
+
+## Mobile
+<img width="1349" alt="image" src="https://github.com/AndyFooGuoZhen/Oauth-flow-and-details/assets/77149531/7b120d09-796d-438f-ad1b-b95c99680971">
+
+## SPA
+<img width="1393" alt="image" src="https://github.com/AndyFooGuoZhen/Oauth-flow-and-details/assets/77149531/42c83c78-d4cd-4362-876e-758365afed28">
+
+
+
 
 
 
